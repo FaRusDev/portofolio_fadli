@@ -1,26 +1,23 @@
 const text = document.getElementById('text')
 const speed = document.getElementById('speed')
-const textToDisplay = "My Name Is Fadli Rusandy"
+const textToDisplay = document.getElementById('txt')
+const button = document.getElementById('btn')
 
 let sliceString = 1
 let speedVal = 1000 / speed.value
-speed.addEventListener('input', (e) => speedVal = 300 / e.target.value)
-
 
 function displayText(){
-    text.innerText = textToDisplay.slice(0, sliceString)
+    text.innerText = textToDisplay.value.slice(0, sliceString)
 
     sliceString = sliceString+1
 
-    if (sliceString > textToDisplay.length){
+    if (sliceString > textToDisplay.value.length){
         sliceString = 1
     }
 
-    setTimeout(displayText,speedVal)
-
-    
+    setTimeout(displayText,speedVal)    
 }
 
+speed.addEventListener('input', (e) => speedVal = 300 / e.target.value)
 
-displayText()
 
