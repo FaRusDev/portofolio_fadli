@@ -31,12 +31,6 @@ body{
     color: #f1f7ee;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
 
 .input__container input {
   width: 100%;
