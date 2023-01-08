@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ujian</title>
+    <link rel="stylesheet" href="ujian.css" />
+  </head>
+  <body>
+    <h1>SOAL LATIHAN UNTUK HONEYKU PAKBAL</h1>
+
+    <div class="full-container">
+      <div class="container container2">
+        <p style="margin: 10px 20px 0px">Nomor Soal</p>
+        <div id="nomor"></div>
+      </div>
+
+      <div class="container container2">
+        <h2 id="pertanyaan"></h2>
+        <div class="jawabanContainer">
+          <div class="jawabanItem">
+            <input type="radio" name="jawaban" id="a" value="a" />
+            <label for="a" class="text-jawaban"></label>
+          </div>
+          <div class="jawabanItem">
+            <input type="radio" name="jawaban" id="b" value="b" />
+            <label for="b" class="text-jawaban"></label>
+          </div>
+
+          <div class="jawabanItem">
+            <input type="radio" name="jawaban" id="c" value="c" />
+            <label for="c" class="text-jawaban"></label>
+          </div>
+
+          <div class="jawabanItem">
+            <input type="radio" name="jawaban" id="d" value="d" />
+            <label for="d" class="text-jawaban"></label>
+          </div>
+        </div>
+
+        <div class="containerJawabanButton">
+          <button id="prev" onclick="prev()">Prev</button>
+          <button id="next" onclick="next()">Next</button>
+        </div>
+      </div>
+    </div>
+    <div class="b">
+      <button class="btn" id="periksa">Submit</button>
+    </div>
+
+    <div class="container">
+      <div id="displayScore"></div>
+    </div>
+
+    <div id="displaySalah"></div>
+
+    <script>
+      //counter variable
+      let soalSaatIni = 0
+
+      //answer variable
+      let answers = {}
+      let score = 0
+
+      let soals = []
+      let soalBenar = []
+      let soalSalah = []
+
+      const pertanyaanEl = document.getElementById("pertanyaan")
+      const jawabanEl = document.querySelectorAll(".text-jawaban")
+      const nomor = document.getElementById("nomor")
+      const periksa = document.getElementById("periksa")
+      const displayScore = document.getElementById("displayScore")
+      const displaySalah = document.getElementById("displaySalah")
+
+      const prevButton = document.getElementById("prev")
+      const nextButton = document.getElementById("next")
+
+      const jawabanRadio = document.querySelectorAll("input[name='jawaban']")
+      const getSoal = () => {
+        fetch("./pertanyaan.json")
+          .then((resp) => resp.json())
+          .then((data) => {
+            setSoal(data)
+            selectAnswer(data)
+            ambilSoal(data)
+          })
+      }
+
+      const setSoal = (arrayData) => {
+        if (soalSaatIni <= 0) {
+          prevButton.style.display = "none"
+          nextButton.style.display = "inline-block"
+        }
+        if (soalSaatIni > 0 && soalSaatIni < arrayData.length) {
+          prevButton.style.display = "inline-block"
+          nextButton.style.display = "inline-block"
+        }
+        if (soalSaatIni >= arrayData.length - 1) {
+          nextButton.style.display = "none"
+          prevButton.style.display = "inline-block"
+        }
+
+        const arraySaatIni = arrayData[soalSaatIni]
+
+        if (
+          answers[arraySaatIni.id] !== undefined ||
+          answers[arraySaatIni.id] !== null
+        ) {
+          jawabanRadio.forEach((item) => {
+            if (answers[arraySaatIni.id] == item.value) {
+              item.checked = true
+            }
+          })
+        }
+
+        pertanyaanEl.innerHTML = `Soal No.${arraySaatIni.id} <p>${arraySaatIni.soal}</p>`
+        jawabanEl[0].innerText = arraySaatIni.jawaban.a
+        jawabanEl[1].innerText = arraySaatIni.jawaban.b
+        jawabanEl[2].innerText = arraySaatIni.jawaban.c
+        jawabanEl[3].innerText = arraySaatIni.jawaban.d
+
+        for (let index = 1; index <= arrayData.length; index++) {
+          nomor.innerHTML += `<div class="listSoal" onclick="getSoalDariNomor(${index})">${index}</div>`
+        }
+      }
+
+      function selectAnswer(arr) {
+        jawabanRadio.forEach((item) => {
+          item.addEventListener("change", function () {
+            if (item.value !== answers[arr[soalSaatIni].id]) {
+              answers[arr[soalSaatIni].id] = item.value
+            }
+          })
+        })
+      }
+
+      const clearSelect = () => {
+        jawabanRadio.forEach((el) => {
+          el.checked = false
+        })
+        score = 0
+      }
+
+      function getSoalDariNomor(index) {
+        nomor.innerHTML = ""
+        clearSelect()
+        soalSaatIni = index - 1
+        getSoal()
+      }
+
+      function next() {
+        nomor.innerHTML = ""
+        clearSelect()
+        soalSaatIni++
+        getSoal()
+      }
+
+      function prev() {
+        nomor.innerHTML = ""
+        clearSelect()
+        soalSaatIni--
+        getSoal()
+      }
+
+      function ambilSoal(arrayData) {
+        soals = arrayData
+        console.log(soals)
+      }
+
+      periksa.addEventListener("click", function () {
+        Object.entries(answers).forEach(([key, value], index) => {
+          if (key !== null || key !== undefined) {
+            if (key == soals[index].id && value == soals[index].jawabanBenar) {
+              score++
+            } else {
+              soalSalah.push(
+                `<div class="container" style="padding:20px;"><p>soal yg nomor <b>${key}</b> SALAH<br/>jawabanta' tadi --- <b>${value}</b> --- harusnya yang benar itu --- <b>${soals[index].jawabanBenar}</b> --- </p> <p>cek diatas itu soal sama pilihannya</p> <h4>ini pembahasannya</h4> <p>${soals[index].pembahasan}</p></container>`
+              )
+            }
+          }
+        })
+        console.log(score)
+
+        if (soalSalah.length !== null || soalSalah.length !== 0) {
+          for (let i = 0; i < soalSalah.length; i++) {
+            displaySalah.innerHTML += `<p>${soalSalah[i]}</p>`
+          }
+        }
+
+        displayScore.innerHTML = `<p style="margin:10px">skor nya honeyku : benar ${score} dari ${soals.length} soal</p>
+        `
+        clearSelect()
+
+        soalSalah = []
+      })
+
+      displaySalah.innerHTML = ""
+      if (soalSaatIni == 0) {
+        prevButton.style.display = "none"
+      } else {
+        prevButton.style.display = "block"
+      }
+
+      getSoal()
+      console.log(soalSaatIni)
+    </script>
+  </body>
+</html>

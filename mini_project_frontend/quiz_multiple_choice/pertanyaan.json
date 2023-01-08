@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "soal": "asdfadfasdf",
+    "jawaban": {
+      "a": "asdfdfsa",
+      "b": "1231",
+      "c": "s23",
+      "d": ";proksd"
+    },
+    "jawabanBenar": "a",
+    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+  },
+  {
+    "id": 2,
+    "soal": "123123",
+    "jawaban": {
+      "a": "oeq",
+      "b": "121231",
+      "c": "13-",
+      "d": ";msdfk"
+    },
+    "jawabanBenar": "b",
+    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+  },
+  {
+    "id": 3,
+    "soal": "soal 3",
+    "jawaban": {
+      "a": "k",
+      "b": "123",
+      "c": "k;lk;-",
+      "d": ";msdfk"
+    },
+    "jawabanBenar": "a",
+    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+  },
+  {
+    "id": 4,
+    "soal": "soal 4",
+    "jawaban": {
+      "a": "cs",
+      "b": "erjk",
+      "c": "c4",
+      "d": ";d4"
+    },
+    "jawabanBenar": "a",
+    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+  },
+  {
+    "id": 5,
+    "soal": "Soal 5",
+    "jawaban": {
+      "a": "a5",
+      "b": "b5",
+      "c": "c5-",
+      "d": ";d5"
+    },
+    "jawabanBenar": "b",
+    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+  },
+  {
+    "id": 6,
+    "soal": "soal 6",
+    "jawaban": {
+      "a": "a6",
+      "b": "b6",
+      "c": "k;c6;-",
+      "d": ";d6"
+    },
+    "jawabanBenar": "a",
+    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+  },
+  {
+    "id": 7,
+    "soal": "asdfadfasdf",
+    "jawaban": {
+      "a": "asdfdfsa",
+      "b": "1231",
+      "c": "s23",
+      "d": ";proksd"
+    },
+    "jawabanBenar": "a",
+    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+  },
+  {
+    "id": 8,
+    "soal": "123123",
+    "jawaban": {
+      "a": "oeq",
+      "b": "121231",
+      "c": "13-",
+      "d": ";msdfk"
+    },
+    "jawabanBenar": "b",
+    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+  },
+  {
+    "id": 9,
+    "soal": "soal 3",
+    "jawaban": {
+      "a": "k",
+      "b": "123",
+      "c": "k;lk;-",
+      "d": ";msdfk"
+    },
+    "jawabanBenar": "a",
+    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+  },
+  {
+    "id": 10,
+    "soal": "soal 4",
+    "jawaban": {
+      "a": "cs",
+      "b": "erjk",
+      "c": "c4",
+      "d": ";d4"
+    },
+    "jawabanBenar": "a",
+    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+  },
+  {
+    "id": 11,
+    "soal": "Soal 5",
+    "jawaban": {
+      "a": "a5",
+      "b": "b5",
+      "c": "c5-",
+      "d": ";d5"
+    },
+    "jawabanBenar": "b",
+    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+  },
+  {
+    "id": 12,
+    "soal": "soal 6",
+    "jawaban": {
+      "a": "a6",
+      "b": "b6",
+      "c": "k;c6;-",
+      "d": ";d6"
+    },
+    "jawabanBenar": "a",
+    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+  }
+]

@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: beige;
+  /* overflow: scroll; */
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: white;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px;
+}
+
+.jawabanItem > * {
+  cursor: pointer;
+}
+
+.jawabanContainer {
+  text-align: justify;
+  margin: 10px 20px;
+}
+
+.jawabanContainer div {
+  margin: 10px;
+}
+
+.containerJawabanButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.containerJawabanButton button {
+  width: 100%;
+  height: 2rem;
+  border: none;
+  background-color: #f3789d;
+  color: white;
+}
+
+.b {
+  margin: 0px 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow: hidden;
+}
+.btn {
+  width: 100%;
+  height: 2rem;
+  border: none;
+  background-color: #f3789d;
+  color: white;
+}
+
+.containerJawabanButton :nth-child(2) {
+  border-left: 1px solid white;
+}
+
+#nomor {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-gap: 2vh;
+  justify-items: center;
+  margin: 20px;
+}
+
+.listSoal > * {
+  min-width: 2px;
+}
+.listSoal {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listSoal:hover {
+  background-color: crimson;
+  cursor: pointer;
+}
+
+/* for mobile */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #nomor {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 2vh;
+    justify-items: center;
+    margin: 20px;
+  }
+
+  .listSoal > * {
+    min-width: 2px;
+  }
+  .listSoal {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  .listSoal:hover {
+    background-color: crimson;
+  }
+}
+
+/* for tablet */
+/* @media screen and (min-width: 481px) and (max-width: 768px) {
+  #nomor {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    padding: 10px;
+    gap: 10%;
+  }
+} */
+
+/* for laptop & desktops */
+@media screen and (min-width: 1020px) {
+  .full-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .full-container :nth-child(1) {
+    flex: 1;
+  }
+  .full-container :nth-child(2) {
+    flex: 3;
+  }
+
+  #nomor {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 2vh;
+    justify-items: center;
+    margin: 20px;
+  }
+
+  .listSoal > * {
+    min-width: 2px;
+  }
+  .listSoal {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  .listSoal:hover {
+    background-color: crimson;
+  }
+
+  .containerJawabanButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .containerJawabanButton button {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    background-color: #f3789d;
+    color: white;
+  }
+
+  .containerJawabanButton :nth-child(2) {
+    border-left: 1px solid white;
+    flex: 1;
+  }
+
+  body {
+    padding: 2rem 10rem;
+  }
+}
