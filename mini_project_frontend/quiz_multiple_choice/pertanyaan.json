@@ -1,146 +1,237 @@
 [
   {
     "id": 1,
-    "soal": "asdfadfasdf",
+    "soal": "Apakah kepanjangan dari WAN?",
     "jawaban": {
-      "a": "asdfdfsa",
-      "b": "1231",
-      "c": "s23",
-      "d": ";proksd"
+      "a": "Wireless Areas Networking",
+      "b": "Wide Area Network",
+      "c": "West An Nail",
+      "d": "Wifi A N"
     },
-    "jawabanBenar": "a",
-    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+    "jawabanBenar": "b",
+    "pembahasan": ""
   },
   {
     "id": 2,
-    "soal": "123123",
+    "soal": "Peer to peer merupakan jenis jaringan",
     "jawaban": {
-      "a": "oeq",
-      "b": "121231",
-      "c": "13-",
-      "d": ";msdfk"
+      "a": "LAN",
+      "b": "PAN",
+      "c": "WAN",
+      "d": "MAN"
     },
-    "jawabanBenar": "b",
-    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+    "jawabanBenar": "a",
+    "pembahasan": ""
   },
   {
     "id": 3,
-    "soal": "soal 3",
+    "soal": "Kepanjangan dari OSI...",
     "jawaban": {
-      "a": "k",
-      "b": "123",
-      "c": "k;lk;-",
-      "d": ";msdfk"
+      "a": "Organisation Standards International",
+      "b": "Operating System Interconnection",
+      "c": "Open System Interconection",
+      "d": "Ojo Seng Iki"
     },
-    "jawabanBenar": "a",
-    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+    "jawabanBenar": "c",
+    "pembahasan": ""
   },
   {
     "id": 4,
-    "soal": "soal 4",
+    "soal": "Berikut  adalah layer-layer pada OSI, kecuali…",
     "jawaban": {
-      "a": "cs",
-      "b": "erjk",
-      "c": "c4",
-      "d": ";d4"
+      "a": "Application layer",
+      "b": "Presentation layer",
+      "c": "Internet layer",
+      "d": " Transport layer"
     },
-    "jawabanBenar": "a",
-    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+    "jawabanBenar": "c",
+    "pembahasan": ""
   },
   {
     "id": 5,
-    "soal": "Soal 5",
+    "soal": "TCP/IP merupakan...",
     "jawaban": {
-      "a": "a5",
-      "b": "b5",
-      "c": "c5-",
-      "d": ";d5"
+      "a": " Kaidah untuk memformat transmisi data",
+      "b": "Protocol standard untuk menghubungkan komputer-komputer pemerintah dan saat ini menjadi dasar bagi internet",
+      "c": "Hubunganantara 2/ lebih system computer melalui media komunikasiuntukbertukar data",
+      "d": "Protocol yang mengatur proses komunikasi data yang dikembangkanoleh"
     },
     "jawabanBenar": "b",
-    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+    "pembahasan": ""
   },
   {
     "id": 6,
-    "soal": "soal 6",
+    "soal": " Kepanjangan dari TCP/IP adalah",
     "jawaban": {
-      "a": "a6",
-      "b": "b6",
-      "c": "k;c6;-",
-      "d": ";d6"
+      "a": "Transmision Control Protocol / Internet Protocol",
+      "b": "Transport Center Protocol/ Insert Protocol",
+      "c": "Technic Control Product/International Protocol",
+      "d": "Thunder Core Panther/Iinternet Protocol"
     },
     "jawabanBenar": "a",
-    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+    "pembahasan": ""
   },
   {
     "id": 7,
-    "soal": "asdfadfasdf",
+    "soal": "SMTP adalah singkatan dari..",
     "jawaban": {
-      "a": "asdfdfsa",
-      "b": "1231",
-      "c": "s23",
-      "d": ";proksd"
+      "a": "Sekolah menengah tahap pertama",
+      "b": "Simpel Mail Transper Protongkol",
+      "c": "Simple Mail Transfer Protocol",
+      "d": "Semua jawaban salah"
     },
-    "jawabanBenar": "a",
-    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+    "jawabanBenar": "b",
+    "pembahasan": ""
   },
   {
     "id": 8,
-    "soal": "123123",
+    "soal": "Kepanjangan dari FTP adalah...",
     "jawaban": {
-      "a": "oeq",
-      "b": "121231",
-      "c": "13-",
-      "d": ";msdfk"
+      "a": "File technology Personal",
+      "b": "File Transfer Protocol",
+      "c": "Fast technology Production",
+      "d": "File technology Personal"
     },
     "jawabanBenar": "b",
-    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+    "pembahasan": ""
   },
   {
     "id": 9,
-    "soal": "soal 3",
+    "soal": "Dibawah ini yang merupakan macam-macam topologi jaringan komputer ,kecuali?",
     "jawaban": {
-      "a": "k",
-      "b": "123",
-      "c": "k;lk;-",
-      "d": ";msdfk"
+      "a": "Topologi Bus",
+      "b": "Topologi Ring",
+      "c": "Topologi Tree",
+      "d": "Topologi Free"
     },
-    "jawabanBenar": "a",
-    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+    "jawabanBenar": "d",
+    "pembahasan": ""
   },
   {
     "id": 10,
-    "soal": "soal 4",
-    "jawaban": {
-      "a": "cs",
-      "b": "erjk",
-      "c": "c4",
-      "d": ";d4"
-    },
-    "jawabanBenar": "a",
-    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+    "soal": "Berapa lapisan layer OSI ..",
+    "jawaban": { "a": " 3", "b": "2", "c": "5", "d": "7" },
+    "jawabanBenar": "d",
+    "pembahasan": ""
   },
   {
     "id": 11,
-    "soal": "Soal 5",
+    "soal": "Sebutkan 7 layer pada OSI secara urut!",
     "jawaban": {
-      "a": "a5",
-      "b": "b5",
-      "c": "c5-",
-      "d": ";d5"
+      "a": "Session layer, Presentation layer, Application layer, Transport layer, Network layer, Data link layer, Physical layer",
+      "b": "Session layer, Physical layer, Presentation layer, Application layer, Transport layer, Network layer, Data link layer",
+      "c": "Application layer, Session layer, Presentation layer,  Transport layer, Network layer, Data link layer, Physical layer",
+      "d": "Application layer, Presentation layer, Session layer, Transport layer, Network layer, Data link layer, Physical layer"
     },
-    "jawabanBenar": "b",
-    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+    "jawabanBenar": "d",
+    "pembahasan": ""
   },
   {
     "id": 12,
-    "soal": "soal 6",
+    "soal": "Topologi BUS adalah?",
     "jawaban": {
-      "a": "a6",
-      "b": "b6",
-      "c": "k;c6;-",
-      "d": ";d6"
+      "a": " Jaringan yang menggunakan satu kabel yang terhubung melalui T-connector.",
+      "b": "Jaringan yang terhubung melalui kabel RJ-14",
+      "c": "Jaringan komputer yang terhubung melalui hub",
+      "d": " Suatu jaringan kecil yang tersusun rata"
     },
     "jawabanBenar": "a",
-    "pembahasan": "asdfadsfadfadsfadsfsadfdsafasd"
+    "pembahasan": ""
+  },
+  {
+    "id": 13,
+    "soal": "Kepanjangan dari ASCII ….",
+    "jawaban": {
+      "a": "African Standard Code For Information Interchange",
+      "b": " American Standard Code For Information Interchange",
+      "c": "Asia Standard Code For Information Interchange",
+      "d": "American Code Four information Interchange"
+    },
+    "jawabanBenar": "b",
+    "pembahasan": ""
+  },
+  {
+    "id": 14,
+    "soal": "Pengertian ASCII ….",
+    "jawaban": {
+      "a": "Kodehuruf yang bersifat universal",
+      "b": "Suatu standard international dalamkodedanhuruf yang bersifat universal",
+      "c": "Suatu standard International dalamkodehurufdan symbol seperti hex dan Unicode tetapi ASCII bersifat universal",
+      "d": "Suatu code yang bersifat universal"
+    },
+    "jawabanBenar": "c",
+    "pembahasan": ""
+  },
+  {
+    "id": 15,
+    "soal": "Fungsi ASCII ….",
+    "jawaban": {
+      "a": " Digunakan untuk mewakili karakter angka maupun huruf di dalam computer",
+      "b": " Digunakan untuk mewakili karakter angka di dalam computer",
+      "c": "Digunakan untuk mewakili karakter huruf di dalam computer",
+      "d": "Mewakili symbol"
+    },
+    "jawabanBenar": "a",
+    "pembahasan": ""
+  },
+  {
+    "id": 16,
+    "soal": "Jaringan yang bisa berfungsi sebagai client dan bisa berfungsi sebagai server disebut dengan jaringan ...",
+    "jawaban": {
+      "a": "Peer to peer",
+      "b": "Client server",
+      "c": "LAN",
+      "d": "MAN"
+    },
+    "jawabanBenar": "a",
+    "pembahasan": ""
+  },
+  {
+    "id": 17,
+    "soal": "Salah satu komputer dapat melayani, dan komputer yang lain sebagai client disebut sebagai jaringan...",
+    "jawaban": {
+      "a": "Peer to peer",
+      "b": "Client server",
+      "c": "LAN",
+      "d": "MAN"
+    },
+    "jawabanBenar": "b",
+    "pembahasan": ""
+  },
+  {
+    "id": 18,
+    "soal": "Perangkat keras (hardware) yang dibutuhkan untuk membangun sebuah jaringan, kecuali...",
+    "jawaban": {
+      "a": "Router",
+      "b": "Hub",
+      "c": "Switch",
+      "d": "Gateway"
+    },
+    "jawabanBenar": "d",
+    "pembahasan": ""
+  },
+  {
+    "id": 19,
+    "soal": "Apa yang dimaksud dengan IP Address?",
+    "jawaban": {
+      "a": "IP Address adalah gambaran / rangkain jaringan",
+      "b": "IP Address adalah alamat dari server",
+      "c": "IP Address adalah jaringan LAN nirkabel",
+      "d": "IP Address adalah alamat / address global yang menggunakan protokol TCP/IP"
+    },
+    "jawabanBenar": "d",
+    "pembahasan": ""
+  },
+  {
+    "id": 20,
+    "soal": "Untuk menghubungkan 2 jaringan atau lebih jaringan yang berbeda disebut sebagai...",
+    "jawaban": {
+      "a": "Swicth",
+      "b": "Ethernet Card",
+      "c": " RJ-45",
+      "d": "Router"
+    },
+    "jawabanBenar": "d",
+    "pembahasan": ""
   }
 ]
